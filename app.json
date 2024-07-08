@@ -5,9 +5,26 @@
     "pages/contact/contact"
   ],
   "window": {
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarBackgroundColor": "#ffffff"
+    "backgroundTextStyle":"light",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小程序学习",
+    "navigationBarBackgroundColor": "#2b4b6b"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们"
+      }
+    ]
   },
   "style": "v2",
   "componentFramework": "glass-easel",
