@@ -1,13 +1,23 @@
 <!--pages/home/home.wxml-->
-<!--轮播图-->
+
 <swiper indicator-dots cicular>
   <swiper-item wx:for="{{swiperList}}" wx:key="id">
     <image src="{{item.image}}"></image>
   </swiper-item>
 </swiper>
 <view class="grid-list">
-  <view class="grid-item" wx:for="{{gridList}}" wx:key="id">
+  <view class="grid-item" wx:for="{{gridList}}" wx:key="id" bindtap="clickTag" data-id="{{item.id}}"
+  data-name="{{item.name}}">
     <image src="{{item.icon}}"></image>
     <text>{{item.name}}</text>
   </view>
 </view>
+
+<view class="img-box">
+  <view class="img-item business">商家推荐</view>
+  <view class="img-item friend">交友论坛</view>
+</view>
+
+<navigator url="/pages/message/message" open-type="switchTab">
+  跳转信息页
+</navigator>

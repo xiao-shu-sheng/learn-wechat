@@ -10,6 +10,8 @@ swiper image {
 .grid-list {
   display: flex;
   flex-wrap: wrap;
+  border-top: 1rpx solid #efefef;
+  border-left: 1rpx solid #efefef;
 }
 .grid-item {
   width: 33.3%;
@@ -19,6 +21,8 @@ swiper image {
   align-items: center;
   justify-content: center;
   border-right: 1rpx solid #efefef;
+  border-bottom: 1rpx solid #efefef;
+  box-sizing: border-box;
 }
 .grid-item image {
   width: 60rpx;
@@ -27,4 +31,27 @@ swiper image {
 .grid-item text {
   font-size: 24rpx;
   margin-top: 10rpx;
+}
+
+.img-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1%;
+  margin-top: 20rpx;
+}
+.img-item {
+  width: 48.5%;
+  height: 200rpx;
+  display: flex;
+  color: white;
+  font-size: 32rpx;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20rpx;
+}
+.business {
+  background: linear-gradient(to right, #ff4777, #FF4C00)
+}
+.friend {
+  background: linear-gradient(to right, #a4e2c6, #c0ebd7)
 }

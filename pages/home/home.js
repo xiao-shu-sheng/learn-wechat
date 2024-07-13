@@ -44,6 +44,16 @@ Page({
       }
     })
   },
+
+  // 点击九宫
+  clickTag(e) {
+    const {id, name} = e.currentTarget.dataset;
+    wx.showToast({
+      title: name + id,
+      icon: 'success',
+      duration: 2000
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
